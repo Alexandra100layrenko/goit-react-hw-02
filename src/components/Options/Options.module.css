@@ -1,9 +1,15 @@
 .options {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
   }
   
   .options button {
-    margin: 5px;
-    padding: 10px;
+    padding: 8px 12px;
     font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #626161;
   }

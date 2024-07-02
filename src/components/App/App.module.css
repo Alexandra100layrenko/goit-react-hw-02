@@ -1,4 +1,13 @@
 .container {
-  text-align: center;
-  margin-top: 50px;
+  display: block;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.container > h1 {
+  margin-bottom: 16px;
+}
+
+.container > p {
+  margin-bottom: 40px;
 }
