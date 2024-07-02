@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import Feedback from '../Feedback/Feedback';
 import Options from '../Options/Options';
 import './App.module.css'
@@ -14,7 +15,9 @@ export default function App() {
   };
 
   return (
-    <div className={styles.app}>
+    <div className={css.container}>
+      <h1>Sip Happens Café</h1>
+      <p>Please leave your feedback about our service by selecting one of the options below.</p>
       <Options onFeedback={handleFeedback} />
       <Feedback feedback={feedback} />
     </div>
