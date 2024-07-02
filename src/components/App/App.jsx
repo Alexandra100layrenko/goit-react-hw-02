@@ -1,4 +1,4 @@
-import { useState, useEffect  } from 'react';
+import { useState, useEffect } from 'react';
 import Feedback from '../Feedback/Feedback';
 import Options from '../Options/Options';
 import Notification from '../Notification/Notification'
@@ -33,8 +33,7 @@ export default function App() {
   }
 
   const positiveFeedback = () => {
-    return
-    totalFeedback > 0 ? Math.round((feedback.good / totalFeedback) * 100) : 0;
+    return totalFeedback > 0 ? Math.round((feedback.good / totalFeedback) * 100) : 0;
   }
 
   return (
