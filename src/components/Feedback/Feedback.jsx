@@ -1,11 +1,11 @@
-/*import './Feedback.module.css'
+import styles from './Feedback.module.css';
 
 export default function Feedback({ feedback }) {
     return (
-      <div className={css.feedback}>
+      <div className={styles.feedback}>
         <p>Good: {feedback.good}</p>
         <p>Neutral: {feedback.neutral}</p>
         <p>Bad: {feedback.bad}</p>
       </div>
     );
-  }*/
+  }
