@@ -33,16 +33,15 @@ export default function App() {
   }
 
   const positiveFeedback = () => {
-    return totalFeedback > 0 ? Math.round((feedback.good / totalFeedback) * 100) : 0;
+    totalFeedback > 0 ? Math.round((feedback.good / totalFeedback) * 100) : 0;
   }
 
   return (
     <div className={styles.container}>
-      <h1>Sip Happens Café</h1>
-      <p>Please leave your feedback about our service by selecting one of the options below.</p>
+      <Description />
       <Options onFeedback={handleFeedback} totalFeedback={totalFeedback} onReset={resetClicks} />
       {totalFeedback > 0 ? (
-        <Feedback feedback={feedback} totalFeedback={totalFeedback} positiveFeedback={positiveFeedback} />
+        <Feedback feedback={feedback} totalFeedback={totalFeedback} positiveFeedback={positiveFeedback()} />
       ) : (
         <Notification message="No feedback given yet" />
       )}
