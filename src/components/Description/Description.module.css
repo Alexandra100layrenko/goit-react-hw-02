@@ -1,7 +1,7 @@
-.description > h1 {
-    margin-bottom: 16px;
-  }
-  
-  .description > p {
-    margin-bottom: 40px;
-  }
+.head {
+  margin-bottom: 16px;
+}
+
+.comment {
+  margin-bottom: 40px !important;
+}
