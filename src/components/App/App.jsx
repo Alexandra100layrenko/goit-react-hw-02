@@ -1,26 +1,14 @@
 import { useState, useEffect } from 'react'
-import viteLogo from '/vite.svg'
 import s from'./App.module.css'
 import Descriptions from '../Descriptions/Descriptions'
-import FeedBack from '../Options/Options'
-import Options from '../FeedBack/FeedBack/'
+import FeedBack from '../FeedBack/FeedBack'
+import Options from '../Options/Options'
 
 export default function App() {
-  const [widget, setWidget] = useState({
-    good: 0,
-    neutral: 0,
-    bad: 0
-  })
-
-  const hendleClickByOptin = (value) =>{
-    setWidget(prev => ({
-      ...prev,
-      [value] : prev[value] + 1,
-    }))
-  }
 
   return (
     <div className={s.wraper}>
+      <h1>Description Component</h1>
       <Descriptions />
       <Options />
       <FeedBack />
