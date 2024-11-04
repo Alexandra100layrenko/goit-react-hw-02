@@ -1,6 +1,6 @@
-import s from './Descriptions.module.css'
+import s from './Description.module.css'
 
-export default function Descriptions () {
+export default function Description () {
     return (
         <>
             <h1>Sip Happens Café</h1>

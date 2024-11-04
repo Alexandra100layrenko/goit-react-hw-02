@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import s from './App.module.css'
-import Descriptions from '../Descriptions/Descriptions'
+import Description from '../Description/Description'
 import FeedBack from '../FeedBack/FeedBack'
 import Options from '../Options/Options'
 import Notification from '../Notification/Notification'
@@ -43,7 +43,7 @@ export default function App() {
 
   return (
     <div className={s.wraper}>
-      <Descriptions />
+      <Description />
       <Options onOptionClick={handleClickByOption} options={Object.keys(feedBack)} onReset={resetClicks} totalFeedBack={totalFeedBack} />
       {totalFeedBack > 0 ? (
         <FeedBack feedBack={feedBack} totalFeedBack={totalFeedBack} positiveFeedBack={positiveFeedBack()} />
