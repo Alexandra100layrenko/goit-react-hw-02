@@ -1,6 +1,6 @@
 import s from './Options.module.css'
 
-export default function Options ({onOptionClick, options}) {
+export default function Options ({onOptionClick, options, onReset, totalFeedBack}) {
     return (
         <div className={s.btnOptions}>
             {options.map(option => (
@@ -8,6 +8,7 @@ export default function Options ({onOptionClick, options}) {
                 {option.charAt(0).toUpperCase() + option.slice(1)}
             </button>
             ))}
+            {totalFeedBack > 0 && ( <button onClick={onReset}>Reset</button>)}
         </div> 
     )
 }

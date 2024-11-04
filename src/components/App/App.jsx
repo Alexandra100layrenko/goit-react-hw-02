@@ -44,7 +44,7 @@ export default function App() {
   return (
     <div className={s.wraper}>
       <Descriptions />
-      <Options onOptionClick={handleClickByOption} options={Object.keys(feedBack)} onReset={resetClicks} />
+      <Options onOptionClick={handleClickByOption} options={Object.keys(feedBack)} onReset={resetClicks} totalFeedBack={totalFeedBack} />
       {totalFeedBack > 0 ? (
         <FeedBack feedBack={feedBack} totalFeedBack={totalFeedBack} positiveFeedBack={positiveFeedBack()} />
         ) : (
