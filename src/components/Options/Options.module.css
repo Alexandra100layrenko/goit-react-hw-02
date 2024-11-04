@@ -1,0 +1,15 @@
+.btnOptions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+  
+button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #626161;
+}
